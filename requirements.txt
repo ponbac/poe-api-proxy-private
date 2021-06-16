@@ -4,7 +4,7 @@
 fastapi == 0.63.0
 
 # poe-api-proxy/app.py: 12
-pydantic == 1.6.1
+pydantic == 1.6.2
 
 # poe-api-proxy/app.py: 3,4
 requests == 2.23.0
