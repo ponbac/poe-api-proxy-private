@@ -23,6 +23,7 @@ router = APIRouter(
 async def members():
     deta = Deta(settings.DETA_PROJECT_KEY)
     db = deta.Base('members')
+    print(type(db.fetch()))
     members = next(iter(db.fetch()))
     #print(members)
 
