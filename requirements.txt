@@ -16,4 +16,4 @@ python-multipart
 aiofiles
 firebase-admin
 python-dotenv
-deta
+deta == 0.8
