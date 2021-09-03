@@ -31,6 +31,9 @@ class Settings(BaseSettings):
 
     POE_STASH_URL: str
 
+    # Deta
+    DETA_PROJECT_KEY: str
+
     class Config:
         case_sensitive = True
         env_file = ".env"
