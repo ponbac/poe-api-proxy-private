@@ -23,9 +23,7 @@ router = APIRouter(
 async def members():
     deta = Deta(settings.DETA_PROJECT_KEY)
     db = deta.Base('members')
-    print(type(db.fetch()))
-    members = next(iter(db.fetch()))
-    #print(members)
+    members = next(db.fetch())
 
     return JSONResponse(content=members)
 
@@ -33,7 +31,6 @@ async def members():
 async def count():
     deta = Deta(settings.DETA_PROJECT_KEY)
     db = deta.Base('members')
-    members = next(iter(db.fetch()))
-    #print(members)
+    members = next(db.fetch())
 
     return JSONResponse(content=len(members))
